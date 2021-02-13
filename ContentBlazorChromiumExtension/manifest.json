@@ -1,0 +1,20 @@
+{
+  "name": "Content Blazor Chromium Extension Sample",
+  "description": "Build a content script chromium extension with C#!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": { "128": "dotnet.png" },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/*"
+      ],
+      "js": [
+        "wwwroot/contentScript.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "wwwroot/*"
+  ]
+}
